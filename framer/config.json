@@ -2,27 +2,24 @@
   "orientation" : 0,
   "updateDelay" : 0.29999999999999999,
   "designModeSelected" : 0,
-  "cachedDeviceHeight" : 812,
+  "cachedDeviceHeight" : 736,
   "contentScale" : 1,
-  "cachedDeviceWidth" : 375,
+  "cachedDeviceWidth" : 414,
   "fullScreen" : false,
-  "deviceType" : "apple-iphone-x-space-gray",
+  "deviceType" : "apple-iphone-8-plus-space-gray",
   "sharedPrototype" : 0,
   "propertyPanelToggleStates" : {
 
   },
-  "projectId" : "ACDC5475-491B-4C39-B5B6-71FA72BED109",
+  "projectId" : "31024FC7-8EA1-411C-B634-597ECD68F3F5",
   "deviceOrientation" : 0,
   "selectedHand" : "",
   "showBezel" : 0,
   "foldedCodeRanges" : [
-    "{876, 5575}",
-    "{9813, 1743}",
-    "{11557, 5102}",
-    "{16660, 358}",
-    "{17019, 1865}",
-    "{18887, 5692}",
-    "{24580, 634}"
+    "{145, 639}",
+    "{785, 1222}",
+    "{2426, 1524}",
+    "{13259, 3373}"
   ],
   "deviceScale" : "fit"
 }
