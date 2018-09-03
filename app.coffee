@@ -640,8 +640,8 @@ innerScroller = new ScrollComponent
 	x: 40*n
 	y: 80*n
 	point: Align.center
-	width: 222*n
-	height: 294*n
+	width: 216*n
+	height: 286*n
 	scrollVertical: false
 	clip: false
 	z: 2
@@ -674,15 +674,15 @@ innerPages = []
 for index in [0...innerCount]
 	innerpage = new Layer
 		width: innerScroller.width
-		height: 294*n
-		x: (222*n + innergutter) * index
+		height: 286*n
+		x: (216*n + innergutter) * index
 		backgroundColor: "#f5f5f5"
 		originX: 0.9
 # 		hueRotate: index * 20
 		parent: innerScroller.content
 		image: innerPics[index]
-# 		borderColor: "rgba(231,233,241,1)"
-# 		borderWidth: 0.12
+		borderColor: "rgba(231,233,241,1)"
+		borderWidth: 0.12
 		shadowColor: "rgba(0,0,0,0.02)"
 		shadowX: 0
 		shadowY: 8
@@ -714,8 +714,8 @@ guessPicArr = ["images/guess01.png","images/guess02.png","images/guess03.png","i
 for i in [0..guessPicNum]
 	guessPic = new Layer
 		parent: CardsArr[5]
-		width: Screen.width-64*n
-		height: 226*n
+		width: Screen.width-80*n
+		height: 219*n
 		x:40*n
-		y: 68*n+226*n*i
+		y: 68*n+219*n*i
 		image: guessPicArr[i]
