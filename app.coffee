@@ -664,9 +664,22 @@ changeBtn = new Layer
 	parent: CardsArr[4]
 	y: 8*n
 	x: 570*n
-	width: 114*n
+	width: 28*n
 	height: 28*n
-	image: "images/changeinner.png"
+	image: "images/flesh.svg"
+
+changeAnimate = new Animation changeBtn,
+	rotation:360
+	options:
+		curve:"spring(400,40,0)"
+		time:0.2
+		
+changeBtnTxt = new TextLayer
+	parent: CardsArr[4]
+	y: 8*n
+	x: 612*n
+	text: "换一批"
+	fontSize: 24*n	
 	
 # print RandoNumber
 innerPages = []
@@ -696,12 +709,20 @@ randomSort = (a, b) ->
 	return Math.random() > 0.5 ? -1 : 1
 arr =  ["images/inner01.png","images/inner02.png","images/inner03.png"]
 
-changeBtn.onTap (event, layer) ->
+changeBtnTxt.onTap (event, layer) ->
 # 	print arr.sort(randomSort)
+	changeAnimate.reset()
+	changeAnimate.start()
 	for index in [0...innerCount]
 		innerPages[index].image = arr.sort(randomSort)[index]
-# 		innerpage.image = arr.sort(randomSort)[a]
-
+	
+changeBtn.onTap (event, layer) ->
+# 	print arr.sort(randomSort)
+	changeAnimate.reset()
+	changeAnimate.start()
+	
+	for index in [0...innerCount]
+		innerPages[index].image = arr.sort(randomSort)[index]
 
 CardsArr[5].y = CardsArr[4].y+440*n
 
