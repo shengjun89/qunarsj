@@ -150,7 +150,7 @@ for number in [0...bannerpicArr.length]
 		backgroundColor: "#FFF"
 		width:12*n
 		height:6*n
-		x: (banner.width/36)*number+banner.width/2
+		x: (banner.width/36)*number+banner.width/2-24*n
 		y: banner.y+banner.height-20*n
 		z: 2
 		opacity: 0.3
