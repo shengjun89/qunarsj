@@ -8,8 +8,10 @@ images/images/items0.png
 images/Navigation Bar.png
 images/navblock.png
 images/bottom.png
+images/flesh.svg
 images/priceinq.png
 images/grid.png
+images/Navigation Bar1.png
 images/inner01.png
 images/iconsnav.png
 images/inner03.png
