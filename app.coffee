@@ -261,6 +261,7 @@ scrolltoY = (y) ->
 	view.opacity = Utils.modulate(y, [0, -20*n], [0,1], true)
 	loadtxt.y = Utils.modulate(y, [0, -80*n], [view.y+view.height-24*n,view.y+view.height-32*n], true)
 	s = Math.round(homeScroll.content.y/frameRate)
+
 		
 # 	print homeScroll.content.y
 	
@@ -282,6 +283,38 @@ scrolltoY = (y) ->
 		loadcontent.image = "images/startsprite.png"
 	
 	pullAnimate(s)	
+
+
+if Screen.height>=812
+	frameRate = 3
+	scrolltoY = (y) ->
+		navbarWhite.opacity = Utils.modulate(y, [0, 164*n], [0,1], true)
+		navbar.opacity = Utils.modulate(y, [0, -20*n], [1,0], true)
+		topGdt.opacity = Utils.modulate(y, [0, -80*n], [0,0.5], true)
+		loadtxt.opacity = Utils.modulate(y, [20*n, -40*n], [0,1], true)
+		view.y = Utils.modulate(y, [0, -10*n], [120*n,30*n], true)
+		view.opacity = Utils.modulate(y, [0, -20*n], [0,1], true)
+		loadtxt.y = Utils.modulate(y, [0, -80*n], [view.y+view.height-24*n,view.y+view.height-32*n], true)
+		s = Math.round(homeScroll.content.y/frameRate)
+		beyondNum = frameStep*frameRate
+		loadtxt.text = "下拉加载"
+		if s < 0
+			s = 0
+			loadcontent.image = "images/startsprite.png"
+		
+	# 	if s == 30
+	# 		sound.play()
+			
+		if s >=  frameStep-1
+	# 		print s
+			loadtxt.text = "加载中..."
+			s = frameStep-1
+			loadcontent.image = "images/sprite.gif"
+		else
+			loadcontent.image = "images/startsprite.png"
+		
+		pullAnimate(s)
+		
 
 # 玩当地
 blockScroll = new ScrollComponent
