@@ -3,7 +3,7 @@ BottomBarData = [{src:"images/home.png",name:"首页",current:""},{src:"images/j
 
 currentArr = ["images/home.gif","images/jny.gif","images/qlg.gif","images/srv.gif","images/sel.gif"]
 
-loadcamer = ["images/u54.gif","images/u55.gif","images/u56.gif","images/u54.gif","images/u55.gif"]
+loadcamer = ["images/u54.gif","images/u55.gif","images/u56.gif","images/u57.gif","images/u55.gif"]
 
 
 sound = new Audio("sounds/Button2.m4a")
@@ -22,8 +22,8 @@ for i in [0...BottomBarData.length]
 		
 	loadView = new Layer
 		parent: Page
-		width: 120
-		height: 120
+		width: 132
+		height: 132
 		x: Align.center
 		y: Align.center(-40)
 		backgroundColor: null

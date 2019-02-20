@@ -2,6 +2,7 @@ app.coffee
 index.html
 images/qlg.png
 images/jny.png
+images/u57.gif
 images/u56.gif
 images/u54.gif
 images/u55.gif
